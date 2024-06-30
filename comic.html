@@ -31,25 +31,6 @@
             </div>
         </div>
     </main>
-    <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", () => {
-                fetch(`https://fwd.innopolis.university/api/hw2?email=a.akhmetova@innopolis.university`)
-                    .then(response => response.text()) 
-                    .then(data => {
-                        return fetch(`https://fwd.innopolis.university/api/comic?id=${data}`);
-                    })
-                    .then(response => response.json())
-                    .then(comic => {
-                        const title = document.getElementById("title");
-                        const img = document.getElementById("img");
-                        const text_date = document.getElementById("date");
-
-                        title.textContent = comic.safe_title;
-                        img.src = comic.img;
-                        img.alt = comic.alt;
-                        text_date.textContent = (new Date(comic.year, comic.month - 1, comic.day)).toLocaleDateString();
-                    });
-            });
-    </script>
+    <script src="dist/comic.bundle.js"></script>
 </body>
 </html>
