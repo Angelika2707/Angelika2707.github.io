@@ -1,0 +1,15 @@
+.Projects {
+    display: flex;
+    justify-content: center;
+}
+
+.port {
+  font-family: "Open Sans";
+     font-weight: 500;
+    font-size: 18px;
+    color: #3383F5;
+    width: 74%;
+    background-color: #E9EAEC;
+    border: 10px solid #E9EAEC;
+    border-radius: 10px;
+}
