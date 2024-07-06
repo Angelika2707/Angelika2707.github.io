@@ -1,0 +1,27 @@
+#container {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 18px;
+  color: #f2a900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.comicText {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.comicImage {
+  flex: 1;
+  text-align: left;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
